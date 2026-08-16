@@ -1,0 +1,96 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --bg: #fdfdfb;
+  --accent: #2b4b6f;
+  --max-width: 680px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  max-width: var(--max-width);
+  margin: 2rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: -apple-system, sans-serif;
+}
+
+.site-title {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+}
+
+.intro {
+  color: var(--muted);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.essay-list { list-style: none; padding: 0; }
+.essay-list li {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #eee;
+}
+.essay-list a {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.essay-list-title { font-size: 1.2rem; font-weight: 600; }
+.essay-list-date {
+  font-family: -apple-system, sans-serif;
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.essay-list p { color: var(--muted); margin: 0.4rem 0 0; }
+
+.essay-date {
+  font-family: -apple-system, sans-serif;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+.essay h1 { margin-top: 0.3rem; }
+.essay-dek { color: var(--muted); font-size: 1.15rem; font-style: italic; }
+.essay-body { margin-top: 2rem; }
+.essay-body p { margin-bottom: 1.3rem; }
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 3rem auto 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-family: -apple-system, sans-serif;
+}

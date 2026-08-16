@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: Essays
+---
+<section class="intro">
+  <p>Monthly essays examining bias in clinical algorithms, the ethics of health data, and how AI systems shape patient outcomes.</p>
+</section>
+
+<ul class="essay-list">
+  {% for essay in collections.essays %}
+  <li>
+    <a href="{{ essay.url }}">
+      <span class="essay-list-title">{{ essay.data.title }}</span>
+      <span class="essay-list-date">{{ essay.data.date | readableDate }}</span>
+    </a>
+    {% if essay.data.description %}<p>{{ essay.data.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
